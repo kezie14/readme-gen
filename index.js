@@ -8,7 +8,14 @@ const questions = [
         type : "input",
         name : "github",
         message : "Give me your Username"
+    },
+    {
+        type : "list",
+        name : "license",
+        choices : ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None']
     }
+
+//Email, Project Name, Description of Project, HowTo Install, HowTo Test, Who Else Contributed
 ]
 
 function writeToFile(fileName, data) {
